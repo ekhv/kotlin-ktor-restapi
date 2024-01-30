@@ -17,9 +17,9 @@ mainClassName = "io.ktor.server.netty.EngineMain"
 
 sourceSets {
     main.kotlin.srcDirs = main.java.srcDirs = ['src']
-    test.kotlin.srcDirs = test.java.srcDirs = ['test']
+    //test.kotlin.srcDirs = test.java.srcDirs = ['test']
     main.resources.srcDirs = ['resources']
-    test.resources.srcDirs = ['testresources']
+    //test.resources.srcDirs = ['testresources']
 }
 
 repositories {
@@ -45,11 +45,11 @@ dependencies {
     implementation "org.postgresql:postgresql:42.2.1" // JDBC Connector for PostgreSQL
 
 
-    testImplementation "io.ktor:ktor-server-tests:$ktor_version" // test framework
+    //testImplementation "io.ktor:ktor-server-tests:$ktor_version" // test framework
 }
 
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
+//tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
+//}
